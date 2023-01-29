@@ -1,0 +1,23 @@
+  // priority: 98
+events.listen('recipes', event => {
+  event.shaped(item.of('minecraft:chest', 4), [
+      'LLL',
+      'L L',
+      'LLL'
+  ], {
+      L: '#minecraft:logs'
+  })
+
+  event.shaped(item.of('minecraft:stick', 16), [
+      'L',
+      'L'
+  ], {
+      L: '#minecraft:logs'
+  })
+
+  event.shapeless(item.of('minecraft:clay_ball', 4), ['#forge:storage_blocks/clay'])
+  event.remove({id: 'minecraft:bread'})
+  event.shapeless(item.of('minecraft:bread'), ['#forge:crops/wheat', '#forge:crops/wheat', '#forge:crops/wheat'])
+  event.shapeless(item.of('minecraft:flint'), ['#forge:gravel', '#forge:gravel', '#forge:gravel'])
+  event.shapeless(item.of('minecraft:wheat_seeds'), ['#forge:crops/wheat'])
+})

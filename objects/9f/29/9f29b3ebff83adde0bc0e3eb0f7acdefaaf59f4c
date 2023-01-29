@@ -1,0 +1,161 @@
+events.listen("ui.main_menu", (event) => {
+    //event.forcedScale = 0
+    event.replace((ui) => {
+        ui.background("uimenu:textures/bg.png");
+        ui.shaderBackground("uimenu:main_menu");
+        ui.widgetTexture = "uimenu:textures/widgets.png";
+
+        //Shader toggle
+        ui.label((l) => {
+            l.height = 5;
+            l.name = Text.of(["Visuals: ", ui.useShaders ? Text.green("✔") : Text.red("✘")]);
+            l.x = 5;
+            l.y = 5;
+            l.action = "kubejsui:toggle_shaders";
+            l.hoverText = ["Toggle visual background"];
+        });
+
+        //If MT is loaded
+        if (Platform.mods.minetogether) {
+            //MineTogether friends list
+            ui.button((b) => {
+                b.name = "Friends List";
+                b.width = 70;
+                b.x = ui.width - b.width - 26;
+                b.y = 4;
+                b.action = "minetogether:friends_list";
+                b.shadow = false;
+            });
+
+            //MineTogether chat
+            ui.imageButton((b) => {
+                b.width = 20;
+                b.x = ui.width - b.width - 98;
+                b.y = 4;
+                b.action = "minetogether:chat";
+                b.texture = "uimenu:textures/chat.png";
+            });
+
+            //MineTogether order server
+            ui.imageButton((b) => {
+                b.width = 20;
+                b.x = ui.width - (ui.width * 0.095 + 172);
+                b.y = ui.height / 2 + 4;
+                b.action = "minetogether:order";
+                b.texture = "uimenu:textures/creeper.png";
+            });
+        }
+
+        //Singleplayer
+        ui.button((b) => {
+            b.name = text.translate("menu.singleplayer");
+            b.width = 150;
+            b.x = ui.width - (ui.width * 0.095 + b.width);
+            b.y = ui.height / 2 - 40;
+            b.action = "minecraft:singleplayer";
+            b.shadow = false;
+        });
+
+        //multiplayer
+        ui.button((b) => {
+            b.name = text.translate("menu.multiplayer");
+            b.width = 150;
+            b.x = ui.width - (ui.width * 0.095 + b.width);
+            b.y = ui.height / 2 - 18;
+            b.action = "minecraft:multiplayer";
+            b.shadow = false;
+        });
+
+        //Mods
+        ui.button((b) => {
+            b.name = text.translate("fml.menu.mods");
+            b.width = 75;
+            b.x = ui.width - (ui.width * 0.095 + b.width * 2);
+            b.y = ui.height / 2 + 4;
+            b.action = "forge:mod_list";
+            b.shadow = false;
+        });
+
+        //Issue tracker
+        ui.button((b) => {
+            b.name = text.of("Support");
+            b.width = 75;
+            b.x = ui.width - (ui.width * 0.095 + b.width - 1);
+            b.y = ui.height / 2 + 4;
+            b.action = "https://www.feed-the-beast.com/support";
+            b.shadow = false;
+        });
+
+        //Options
+        ui.button((b) => {
+            b.name = text.translate("menu.options");
+            b.width = 75;
+            b.x = ui.width - (ui.width * 0.095 + b.width * 2);
+            b.y = ui.height / 2 + 48;
+            b.action = "minecraft:options";
+            b.shadow = false;
+        });
+
+        //Quit
+        ui.button((b) => {
+            b.name = text.of("Quit");
+            b.width = 75;
+            b.x = ui.width - (ui.width * 0.095 + b.width - 1);
+            b.y = ui.height / 2 + 48;
+            b.action = "minecraft:quit";
+            b.shadow = false;
+        });
+
+        //Aux
+        ui.imageButton((b) => {
+            b.width = 20;
+            b.x = ui.width - b.width - 4;
+            b.y = 4;
+            b.action = "ftbauxilium:opt_out";
+            b.texture = "uimenu:textures/auxilium.png";
+        });
+
+        //Dire
+        ui.image((i) => {
+            i.height = 870 * 0.244;
+            i.width = 779 * 0.244;
+            i.texture = "uimenu:textures/person.png";
+            i.y = ui.height - i.height;
+            i.uv = [1, 1, 254, 255];
+        });
+
+        //Pack name
+        ui.image((i) => {
+            i.height = 169 * 0.244;
+            i.width = 895 * 0.244;
+            i.x = ui.width - (ui.width * 0.12 + i.width - 40);
+            i.y = ui.height / 2 - 94;
+            i.texture = "uimenu:textures/packname.png";
+            i.uv = [1, 1, 254, 254];
+        });
+
+        //Forge version
+        ui.label((l) => {
+            l.height = 10;
+            l.name = "Forge Version: " + Platform.mods.forge.version;
+            l.x = ui.width - l.width - 2;
+            l.y = ui.height - 31;
+        });
+
+        //Mods loaded
+        ui.label((l) => {
+            l.height = 10;
+            l.name = Platform.mods.size() + " Mods Loaded";
+            l.x = ui.width - l.width - 2;
+            l.y = ui.height - 21;
+        });
+
+        //Mojang
+        ui.label((l) => {
+            l.height = 10;
+            l.name = "Copyright Mojang AB";
+            l.x = ui.width - l.width - 2;
+            l.y = ui.height - 11;
+        });
+    });
+});

@@ -1,0 +1,7 @@
+#KubeJS Common Properties
+#Sat Nov 13 15:18:50 EST 2021
+hideServerScriptErrors=false
+packmode=default
+debugInfo=false
+announceReload=true
+serverOnly=false

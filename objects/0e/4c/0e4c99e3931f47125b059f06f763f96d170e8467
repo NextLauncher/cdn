@@ -1,0 +1,6 @@
+{
+    "enchantment.create.potato_recovery.desc": "For the Potato Cannon, when enchanted gives the ammo a chance to drop as an item on hit. The chance of ammo being dropped is 25% for Potato Recovery 1, 33% for Potato Recovery 2, and 50% for Potato Recovery 3.",
+    "enchantment.create.capacity.desc": "Applicable on the Copper Backtank for diving. Allows it to store more Pressurized Air for extended dives.",
+    "enchantment.minecolonies.raider_damage_enchant.desc": "It can be applied to weapons (swords and axes) and increases the weapon’s damage against MineColonies raiders. It goes up to level 2 and can be obtained from the Enchanter when their tower is level 3+. (For them to obtain a level 2 Raider’s Bane enchant, their hut must be level 5.)",
+    "enchantment.simplyjetpacks.fuel_efficiency.desc": "This somewhat rare enchantment decreases the amount of fuel used by jetpacks and flux packs when flying or being damaged."
+}

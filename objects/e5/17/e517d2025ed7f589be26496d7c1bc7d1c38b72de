@@ -1,0 +1,20 @@
+// priority: 99
+events.listen('recipes', event => {
+  event.remove({id: 'xreliquary:items/uncrafting/gunpowder_witch_hat'})
+  event.shaped(item.of('minecraft:gunpowder', 6), [
+      'L  ',
+      ' L ',
+      '  L'
+  ], {
+      L: 'xreliquary:witch_hat'
+  })
+
+  event.remove({id: 'xreliquary:items/uncrafting/redstone'})
+  event.shaped(item.of('minecraft:redstone', 6), [
+      ' L ',
+      ' L ',
+      'L  '
+  ], {
+      L: 'xreliquary:witch_hat'
+  })
+})
