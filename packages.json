@@ -14,6 +14,13 @@
       "version" : "1.13.2",
       "location" : "direwolf20-1.16.json",
       "priority" : 0
+    },
+    {
+      "title" : "Direwolf20 1.18",
+      "name" : "Direwolf20 1.18",
+      "version" : "1.10.3",
+      "location" : "direwolf20-1.18.json",
+      "priority" : 0
     }
   ]
 }
