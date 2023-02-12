@@ -1,0 +1,6 @@
+#ids (java.lang.String:271, 275, 258, 286, 279) -- Ids of items that can chop trees, the default ids correspond to: wooden axe, stone axe, iron axe, gold axe and diamond axe
+#hardnessMult (float:2.0) -- Hardness multiplier for logs.
+#
+#Mon Mar 28 02:22:18 BST 2022
+ids=271, 275, 258, 286, 279
+hardnessMult=2.0

@@ -1,0 +1,27 @@
+# Configuration file
+# Generated on 03/11/20 00:34
+
+###########
+# General #
+###########
+
+general {
+   Aether Integration=true
+   guiIdChargingBench=110
+}
+
+#########
+# Block #
+#########
+
+block {
+   blockChargingBench=189
+}
+
+########
+# Item #
+########
+
+item {
+}
+

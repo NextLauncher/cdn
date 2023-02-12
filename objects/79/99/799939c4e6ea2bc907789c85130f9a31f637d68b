@@ -1,0 +1,27 @@
+# Configuration file
+# Generated on 28/03/22 02:22
+
+###########
+# General #
+###########
+
+general {
+}
+
+#########
+# Block #
+#########
+
+block {
+   oilTeleportPipe=143
+   pipeTextureColor=0
+   teleportPipe=142
+}
+
+########
+# Item #
+########
+
+item {
+}
+

@@ -1,0 +1,4 @@
+#ThermometerID (int:31000,>=256.0,<=32767.0) -- Item ID of Thermometer
+#
+#Mon Mar 28 02:22:18 BST 2022
+ThermometerID=31000

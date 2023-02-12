@@ -1,0 +1,27 @@
+# Configuration file
+# Generated on 03/11/20 00:34
+
+###########
+# General #
+###########
+
+general {
+   Aether integration=true
+}
+
+#########
+# Block #
+#########
+
+block {
+}
+
+########
+# Item #
+########
+
+item {
+   Digital Thermometer ID=31001
+   Thermometer ID=31000
+}
+

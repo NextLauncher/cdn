@@ -1,0 +1,26 @@
+# Configuration file
+# Generated on 18/09/19 08:08
+
+###########
+# General #
+###########
+
+general {
+}
+
+#########
+# Block #
+#########
+
+block {
+   ID.RedstoneReceiverBlock=150
+}
+
+########
+# Item #
+########
+
+item {
+   ID.RedstoneRemoteItemId=18000
+}
+

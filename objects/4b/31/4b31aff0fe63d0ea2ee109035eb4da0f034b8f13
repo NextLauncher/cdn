@@ -1,0 +1,6 @@
+#RecipeBookID (int:398,>=256.0,<=31999.0) -- The item ID for the recipe book
+#GuiID (int:15,>=0.0,<=127.0) -- The gui ID used in ModLoaderMP: must be the same as the one in the server file
+#
+#Mon Mar 28 02:22:18 BST 2022
+GuiID=15
+RecipeBookID=398

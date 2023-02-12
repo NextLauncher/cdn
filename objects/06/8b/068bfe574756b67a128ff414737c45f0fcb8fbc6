@@ -1,0 +1,28 @@
+# Configuration file
+# Generated on 28/03/22 02:22
+
+###########
+# General #
+###########
+
+general {
+}
+
+#########
+# Block #
+#########
+
+block {
+   bouncePipe=253
+   crossoverPipe=252
+   extractionPipe=254
+   insertionPipe=255
+}
+
+########
+# Item #
+########
+
+item {
+}
+

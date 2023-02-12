@@ -1,0 +1,30 @@
+# Configuration file
+# Generated on 28/03/22 02:22
+
+###########
+# General #
+###########
+
+general {
+   100 Wrench Rate=false
+   Aether Integration=true
+   Centrifuge Extractor GUI ID=75
+   Rotary Macerator GUI ID=74
+   Singularity Compressor GUI ID=73
+}
+
+#########
+# Block #
+#########
+
+block {
+   blockAdvMachine=199
+}
+
+########
+# Item #
+########
+
+item {
+}
+
